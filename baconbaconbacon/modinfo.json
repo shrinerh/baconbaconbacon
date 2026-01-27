@@ -1,10 +1,10 @@
 {
-  "type": "content",
+  "type": "code",
   "modid": "baconbaconbacon",
   "name": "Bacon Bacon Bacon",
   "authors": [
     "shrinerh"
   ],
   "description": "I searched for \"bacon\" in the Vintage Story Mod DB and to my surprise, there were no results! I finally found my market!",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
