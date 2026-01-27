@@ -1,0 +1,9 @@
+{
+  "code": "infusedbacon",
+  "sealHours": 168,
+  "ingredients": [
+    { "type": "item", "code": "game:alcoholportion", "litres": 0.02, "consumeLitres": 0.02 },
+    { "type": "item", "code": "baconbaconbacon:bacon-drycooked", "quantity": 1 }
+  ],
+  "output": { "type": "item", "code": "baconbaconbacon:bacon-infused", "stackSize": 1 }
+}

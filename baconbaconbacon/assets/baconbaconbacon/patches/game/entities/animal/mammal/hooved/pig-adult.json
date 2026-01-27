@@ -1,0 +1,18 @@
+[
+  {
+    "file": "game:entities/animal/mammal/hooved/pig-adult",
+    "op": "replace",
+    "path": "/server/behaviors/6/drops/0/quantity",
+    "value": { "avg": 5, "var": 1.5 }
+  },
+  {
+    "file": "game:entities/animal/mammal/hooved/pig-adult",
+    "op": "add",
+    "path": "/server/behaviors/6/drops/-",
+    "value": {
+      "type": "item",
+      "code": "baconbaconbacon:bacon-raw",
+      "quantity": { "avg": 10, "var": 2 }
+    }
+  }
+]

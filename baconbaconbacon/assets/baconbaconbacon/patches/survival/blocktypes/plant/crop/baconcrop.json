@@ -1,0 +1,147 @@
+[
+  {
+    "file": "game:blocktypes/plant/crop/cabbage",
+    "op": "add",
+    "path": "/variantgroups/0/states/-",
+    "value": "baconcrop"
+  },
+  {
+    "file": "game:blocktypes/plant/crop/cabbage",
+    "op": "add",
+    "path": "/shapeByType",
+    "value": {
+      "crop-baconcrop-*": { "base": "baconbaconbacon:block/plant/crop/baconcrop/stage{stage}" }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/cabbage",
+    "op": "replace",
+    "path": "/dropsByType",
+    "value": {
+      "crop-cabbage-1": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.7 }  }
+      ],
+      "crop-cabbage-2": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.7 }  }
+      ],
+      "crop-cabbage-3": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.7 }  }
+      ],
+      "crop-cabbage-4": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.7 }  }
+      ],
+      "crop-cabbage-5": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.7 }  }
+      ],
+      "crop-cabbage-6": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.7 }  }
+      ],
+      "crop-cabbage-7": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.7 }  }
+      ],
+      "crop-cabbage-8": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.7 }  }
+      ],
+      "crop-cabbage-9": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.7 }  }
+      ],
+      "crop-cabbage-10": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.7 }  }
+      ],
+      "crop-cabbage-11": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 0.99 }  },
+        { "type": "item", "code": "vegetable-cabbage", "quantity": { "avg": 0.85, "var": 0.1 }  }
+      ],
+      "crop-cabbage-12": [
+        { "type": "item", "code": "seeds-cabbage", "quantity": { "avg": 1.2 }  },
+        { "type": "item", "code": "vegetable-cabbage", "quantity": { "avg": 2, "var": 0 }  }
+      ],
+      "crop-baconcrop-1": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 1 } }
+      ],
+      "crop-baconcrop-2": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 0.75 } }
+      ],
+      "crop-baconcrop-3": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 0.5 } }
+      ],
+      "crop-baconcrop-4": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 0.5 } }
+      ],
+      "crop-baconcrop-5": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 0.5 } }
+      ],
+      "crop-baconcrop-6": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 0.5 } }
+      ],
+      "crop-baconcrop-7": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 0.5 } }
+      ],
+      "crop-baconcrop-8": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 0.5 } }
+      ],
+      "crop-baconcrop-9": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 0.5 } }
+      ],
+      "crop-baconcrop-10": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 0.5 } }
+      ],
+      "crop-baconcrop-11": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 0.95 } },
+        { "type": "item", "code": "baconbaconbacon:headofbacon", "quantity": { "avg": 0.85, "var": 0 } }
+      ],
+      "crop-baconcrop-12": [
+        { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 1.25 } },
+        { "type": "item", "code": "baconbaconbacon:headofbacon", "quantity": { "avg": 1, "var": 0 } }
+      ]
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/cabbage",
+    "op": "add",
+    "path": "/cropPropsByType",
+    "value": {
+      "crop-baconcrop-*": {
+        "requiredNutrient": "N",
+        "nutrientConsumption": 2,
+        "growthStages": 12,
+        "totalGrowthMonths": 9,
+        "heatDamageAbove": 100,
+        "coldDamageBelow": -100
+      }
+    }
+  },
+  {
+    "file": "game:itemtypes/resource/seeds",
+    "op": "add",
+    "path": "/variantgroups/0/states/-",
+    "value": "baconcrop"
+  },
+  {
+    "file": "game:itemtypes/resource/seeds",
+    "op": "add",
+    "path": "/texturesByType",
+    "value": {
+      "seeds-baconcrop": {
+        "seed": { "base": "baconbaconbacon:item/resource/seeds/baconseed" }
+      }
+    }
+  },
+  {
+    "file": "game:itemtypes/resource/seeds",
+    "op": "add",
+    "path": "/attributesByType",
+    "value": {
+      "seeds-baconcrop": {
+        "handbook": {
+          "extraSections": [
+            {
+              "title": "baconbaconbacon:baconseed-handbook-title",
+              "text": "baconbaconbacon:baconseed-handbook-text"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

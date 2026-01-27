@@ -1,0 +1,13 @@
+[
+  {
+    "ingredientPattern": "KH",
+    "ingredients": {
+      "K": { "type": "item", "code": "game:knife-*", "isTool": true  },
+      "H": { "type": "item", "code": "baconbaconbacon:headofbacon" }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": { "type": "item", "code": "baconbaconbacon:bacon-raw", "quantity": 5 }
+  }
+]

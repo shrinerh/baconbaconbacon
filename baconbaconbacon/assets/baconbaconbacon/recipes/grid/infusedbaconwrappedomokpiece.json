@@ -1,0 +1,13 @@
+[
+  {
+    "ingredientPattern": "BOB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-infused" },
+      "O": { "type": "item", "code": "game:omokpiece-gold" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:infusedbaconwrappedomokpiece", "quantity": 1 }
+  }
+]

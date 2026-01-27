@@ -1,0 +1,25 @@
+[
+  {
+    "file": "baconbaconbacon:itemtypes/bacon.json",
+    "op": "add",
+    "path": "/attributes/onHookTransform",
+    "value": {
+      "translation": { "x": 0.1, "y": 0.47, "z": 0.85 },
+      "rotation": { "x": 90, "y": 0, "z": 0 },
+      "origin": { "x": 0, "y": 0, "z": 0 },
+      "scale": 0.4
+    },
+    "dependsOn": [{ "modid": "butchering" }]
+  },
+  {
+    "file": "baconbaconbacon:itemtypes/bacon.json",
+    "op": "add",
+    "path": "/attributes/transformsWhenSmokedByType",
+    "value": {
+      "*-raw": "baconbaconbacon:bacon-smoked",
+      "*-cured": "baconbaconbacon:bacon-smokedcured",
+      "*": null
+    },
+    "dependsOn": [{ "modid": "butchering" }]
+  }
+]

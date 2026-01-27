@@ -1,0 +1,293 @@
+{
+  "code": "bacon",
+  "enabled": true,
+  "maxStackSize": 64,
+  "creativeInventory": { "general": ["*"], "items": ["*"] },
+  "materialDensity": 600,
+  "variantGroups": [
+    {
+      "code": "type",
+      "states": [
+        "raw",
+        "cooked",
+        "drycooked",
+        "crispy",
+        "cured",
+        "cookedcured",
+        "smoked",
+        "smokedcured",
+        "infused"
+      ]
+    }
+  ],
+  "attributes": {
+    "handbook": {
+      "groupBy": ["bacon-*"]
+    },
+    "foodTags": ["meat"],
+    "handbookByType": {
+      "*-smoked": {
+        "extraSections": [
+          {
+            "title": "baconbaconbacon:smoking-explanation-title",
+            "text": "baconbaconbacon:smoking-explanation-text"
+          }
+        ]
+      },
+      "*-smokedcured": {
+        "extraSections": [
+          {
+            "title": "baconbaconbacon:smoking-explanation-title",
+            "text": "baconbaconbacon:smoking-explanation-text"
+          }
+        ]
+      }
+    },
+    "inContainerTextureByType": {
+      "*-raw": { "base": "baconbaconbacon:block/wood/barrel/raw-bacon" },
+      "*-cooked": { "base": "baconbaconbacon:block/wood/barrel/cooked-bacon" },
+      "*-drycooked": { "base": "baconbaconbacon:block/wood/barrel/drycooked-bacon" },
+      "*-crispy": { "base": "baconbaconbacon:block/wood/barrel/crispy-bacon" },
+      "*-cured": { "base": "baconbaconbacon:block/wood/barrel/cured-bacon" },
+      "*-cookedcured": { "base": "baconbaconbacon:block/wood/barrel/cookedcured-bacon" },
+      "*-smoked": { "base": "baconbaconbacon:block/wood/barrel/smoked-bacon" },
+      "*-smokedcured": { "base": "baconbaconbacon:block/wood/barrel/smokedcured-bacon" },
+      "*-infused": { "base": "baconbaconbacon:block/wood/barrel/infused-bacon" }
+    },
+    "crockable": true,
+    "shelvable": true,
+    "displayCaseable": true,
+    "onShelfTransform": {
+      "translation": { "x": 0.5, "y": 0, "z": 0.5 },
+      "rotation": { "x": 0, "y": -41, "z": 0 },
+      "origin": { "x": 0, "y": 0, "z": 0 },
+      "scale": 0.5
+    },
+    "groundStorageTransform": {
+      "translation": { "x": 0.48, "y": 0, "z": 0.46 },
+      "rotation": { "x": 0, "y": -36, "z": 0 },
+      "origin": { "x": 0, "y": 0, "z": 0 },
+      "scale": 0.47
+    },
+    "inFirePitProps": {
+      "transform": {
+        "translation": { "x": 0.48, "y": 0.28, "z": 0.47 },
+        "rotation": { "x": -90, "y": 0, "z": -220 },
+        "origin": { "x": 0.03, "y": 0, "z": 0.02 },
+        "scale": 0.4
+      },
+      "useFirepitModel": "Spit"
+    },
+    "onDisplayTransform": {
+      "translation": { "x": 0.5, "y": 0, "z": 0.55 },
+      "rotation": { "x": 0, "y": 122, "z": 0 },
+      "origin": { "x": 0, "y": 0, "z": 0 },
+      "scale": 0.36
+    },
+    "bakingPropertiesByType": {
+      "*-raw": {
+        "temp": 170,
+        "levelFrom": 0.0,
+        "levelTo": 0.25,
+        "startScaleY": 2,
+        "endScaleY": 1,
+        "resultCode": "baconbaconbacon:bacon-cooked"
+      },
+      "*-cooked": {
+        "temp": 170,
+        "levelFrom": 0.25,
+        "levelTo": 0.5,
+        "startScaleY": 1,
+        "endScaleY": 0.75,
+        "initialCode": "baconbaconbacon:bacon-raw",
+        "resultCode": "baconbaconbacon:bacon-crispy"
+      },
+      "*-crispy": {
+        "temp": 170,
+        "levelFrom": 0.5,
+        "levelTo": 1.0,
+        "startScaleY": 0.75,
+        "endScaleY": 0.5,
+        "initialCode": "baconbaconbacon:bacon-cooked"
+      }
+    },
+    "inPiePropertiesByType": {
+      "*-raw": { "texture": "baconbaconbacon:block/food/pie/fill-bacon", "partType": "Filling" }
+    },
+    "juiceablePropertiesByType": {
+      "*-cooked": {
+        "litresPerItem": 0.3125,
+        "liquidStack": { "type": "item", "code": "baconbaconbacon:bacongreaseportion", "stacksize": 1 },
+        "pressedStack": { "type": "item", "code": "baconbaconbacon:pressedbacon", "stacksize": 1 }
+      }
+    },
+    "nutritionPropsWhenInMealByType": {
+      "*-raw": {
+        "foodCategory": "Protein",
+        "satiety": 200
+      }
+    }
+  },
+  "behaviors": [
+    { "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 }
+      }
+    }
+  ],
+  "combustiblePropsByType": {
+    "*-raw": {
+      "meltingPoint": 170,
+      "meltingDuration": 25,
+      "smeltedRatio": 1,
+      "smeltingType": "cook",
+      "smeltedStack": { "type": "item", "code": "baconbaconbacon:bacon-cooked" },
+      "requiresContainer": false
+    },
+    "*-cooked": {
+      "meltingPoint": 170,
+      "meltingDuration": 25,
+      "smeltedRatio": 1,
+      "smeltingType": "cook",
+      "smeltedStack": { "type": "item", "code": "baconbaconbacon:bacon-crispy" },
+      "requiresContainer": false
+    }
+  },
+  "nutritionPropsByType": {
+    "*-raw": {
+      "foodCategory": "Protein",
+      "health": -1
+    },
+    "*-cooked": {
+      "foodCategory": "Protein",
+      "satiety": 200
+    },
+    "*-drycooked": {
+      "foodCategory": "Protein",
+      "satiety": 200
+    },
+    "*-crispy": {
+      "foodCategory": "Protein",
+      "satiety": 175
+    },
+    "*-cured": {
+      "foodCategory": "Protein",
+      "satiety": 150
+    },
+    "*-cookedcured": {
+      "foodCategory": "Protein",
+      "satiety": 250
+    },
+    "*-smoked": {
+      "foodCategory": "Protein",
+      "satiety": 200
+    },
+    "*-smokedcured": {
+      "foodCategory": "Protein",
+      "satiety": 225
+    },
+    "*-infused": {
+      "foodCategory": "Protein",
+      "satiety": 100,
+      "intoxication": 0.15
+    }
+  },
+  "transitionablePropsByType": {
+    "*-raw": [{
+      "type": "Perish",
+      "freshHours": { "avg": 24 },
+      "transitionHours": { "avg": 12 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-cooked": [{
+      "type": "Perish",
+      "freshHours": { "avg": 72 },
+      "transitionHours": { "avg": 24 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-drycooked": [{
+      "type": "Perish",
+      "freshHours": { "avg": 120 },
+      "transitionHours": { "avg": 36 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-crispy": [{
+      "type": "Perish",
+      "freshHours": { "avg": 120 },
+      "transitionHours": { "avg": 48 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-cured": [{
+      "type": "Perish",
+      "freshHours": { "avg": 7200 },
+      "transitionHours": { "avg": 3600 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-cookedcured": [{
+      "type": "Perish",
+      "freshHours": { "avg": 200 },
+      "transitionHours": { "avg": 36 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-smoked": [{
+      "type": "Perish",
+      "freshHours": { "avg": 600 },
+      "transitionHours": { "avg": 72 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-smokedcured": [{
+      "type": "Perish",
+      "freshHours": { "avg": 9600 },
+      "transitionHours": { "avg": 3600 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-infused": [{
+      "type": "Perish",
+      "freshHours": { "avg": 876000 },
+      "transitionHours": { "avg": 600 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }]
+  },
+  "texturesByType": {
+    "*-raw": { "meat": { "base": "baconbaconbacon:item/raw-bacon" }},
+    "*-cooked": { "meat": { "base": "baconbaconbacon:item/cooked-bacon" }},
+    "*-drycooked": { "meat": { "base": "baconbaconbacon:item/drycooked-bacon" }},
+    "*-crispy": { "meat": { "base": "baconbaconbacon:item/crispy-bacon" }},
+    "*-cured": { "meat": { "base": "baconbaconbacon:item/cured-bacon" }},
+    "*-cookedcured": { "meat": { "base": "baconbaconbacon:item/cookedcured-bacon" }},
+    "*-smoked": { "meat": { "base": "baconbaconbacon:item/smoked-bacon" }},
+    "*-smokedcured": { "meat": { "base": "baconbaconbacon:item/smokedcured-bacon" }},
+    "*-infused": { "meat": { "base": "baconbaconbacon:item/infused-bacon" }}
+  },
+  "shapeByType": {
+    "*": { "base": "item/bacon" }
+  },
+  "guiTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": -89, "y": 41, "z": 33 },
+    "origin": { "x": 0, "y": 0, "z": 0 },
+    "scale": 1.46
+  },
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "origin": { "x": 0, "y": 0, "z": 0 },
+    "scale": 3.4
+  },
+  "tpHandTransform": {
+    "translation": { "x": -0.6, "y": 0, "z": 0 },
+    "rotation": { "x": 90, "y": 100, "z": 0 },
+    "origin": { "x": 0, "y": 0, "z": 0 },
+    "scale": 0.4
+  }
+}

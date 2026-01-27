@@ -1,0 +1,62 @@
+[
+  {
+    "file": "game:recipes/cooking/soup",
+    "op": "add",
+    "path": "/ingredients/0/validStacks/-",
+    "value": { "type": "item", "code": "baconbaconbacon:bacongreaseportion", "shapeElement": "bowl/water" }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "op": "add",
+    "path": "/ingredients/4/validStacks/-",
+    "value": { "type": "item", "code": "baconbaconbacon:bacon-raw", "shapeElement": "bowl/meat/*", "textureMapping": ["meat", "group2"] }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "op": "add",
+    "path": "/ingredients/4/validStacks/-",
+    "value": { "type": "item", "code": "baconbaconbacon:bacon-cooked", "shapeElement": "bowl/meat/*", "textureMapping": ["meat", "group2"] }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "op": "add",
+    "path": "/ingredients/4/validStacks/-",
+    "value": { "type": "item", "code": "baconbaconbacon:bacon-cured", "shapeElement": "bowl/meat/*", "textureMapping": ["meat", "group2"] }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "op": "add",
+    "path": "/ingredients/4/validStacks/-",
+    "value": { "type": "item", "code": "baconbaconbacon:bacon-crispy", "shapeElement": "bowl/meat/*", "textureMapping": ["meat", "group2"] }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "op": "add",
+    "path": "/ingredients/4/validStacks/-",
+    "value": { "type": "item", "code": "baconbaconbacon:bacon-cookedcured", "shapeElement": "bowl/meat/*", "textureMapping": ["meat", "group2"] }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "op": "add",
+    "path": "/ingredients/4/validStacks/-",
+    "value": { "type": "item", "code": "baconbaconbacon:bacon-drycooked", "shapeElement": "bowl/meat/*", "textureMapping": ["meat", "group2"] }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "op": "add",
+    "path": "/ingredients/4/validStacks/-",
+    "value": { "type": "item", "code": "baconbaconbacon:bacon-infused", "shapeElement": "bowl/meat/*", "textureMapping": ["meat", "group2"] }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "op": "add",
+    "path": "/ingredients/4/validStacks/-",
+    "value": { "type": "item", "code": "baconbaconbacon:bacon-smoked", "shapeElement": "bowl/meat/*", "textureMapping": ["meat", "group2"] }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "op": "add",
+    "path": "/ingredients/4/validStacks/-",
+    "value": { "type": "item", "code": "baconbaconbacon:bacon-smokedcured", "shapeElement": "bowl/meat/*", "textureMapping": ["meat", "group2"] }
+  }
+]

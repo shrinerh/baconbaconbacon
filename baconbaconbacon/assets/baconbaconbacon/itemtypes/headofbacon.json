@@ -1,0 +1,63 @@
+{
+  "code": "headofbacon",
+  "maxstacksize": 64,
+  "behaviors": [
+    { "name": "GroundStorable", "properties": { "layout": "Quadrants", "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 } } }
+  ],
+  "shape": { "base": "baconbaconbacon:item/food/headofbacon" },
+  "attributes": {
+    "foodTags": ["headofbacon"],
+    "inContainerTexture": { "base": "baconbaconbacon:block/wood/barrel/raw-bacon" },
+    "inTrapTransform": {
+      "small": {
+        "translation": { "x": -0.2, "y": 0.13, "z": 0 }
+      },
+      "large": {
+        "translation": { "x": 0, "y": -0.07, "z": 0 },
+        "rotation": { "x": 0, "y": 0, "z": -150 }
+      }
+    },
+    "handbook": {
+      "extraSections": [
+        {
+          "title": "baconbaconbacon:baconseed-handbook-title",
+          "text": "baconbaconbacon:baconseed-handbook-text"
+        }
+      ]
+    }
+  },
+  "heldTpIdleAnimation": "holdbothhandslarge",
+  "heldRightReadyAnimation": "holdbothhandslarge",
+  "creativeinventory": { "general": ["*"], "items": ["*"] },
+  "transitionableProps": [{
+    "type": "Perish",
+    "freshHours": { "avg": 72 },
+    "transitionHours": { "avg": 12 },
+    "transitionedStack": { "type": "item", "code": "game:rot" },
+    "transitionRatio": 1
+  }],
+  "materialDensity": 1000,
+  "guiTransform": {
+    "translation": { "x": 2.5, "y": 1, "z": 0 },
+    "rotation": { "x": 137, "y": 131, "z": 0 },
+    "origin": { "x": 0.5, "y": 0.2, "z": 0.5 },
+    "scale": 2.6
+  },
+  "fpHandTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 51, "y": 90, "z": -30 },
+    "scale": 1.9
+  },
+  "tpHandTransform": {
+    "translation": { "x": -0.6, "y": 0.06, "z": -0.38 },
+    "rotation": { "x": -33, "y": 9, "z": -95 },
+    "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+    "scale": 0.79
+  },
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+    "scale": 3.5
+  }
+}

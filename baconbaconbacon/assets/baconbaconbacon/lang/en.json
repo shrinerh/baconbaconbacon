@@ -1,3 +1,135 @@
 {
-    "hello": "hello world!"
+  "-- MOD ITEMS --": "-- MOD ITEMS --",
+
+  "item-bacon-raw": "Raw Bacon",
+  "item-bacon-cooked": "Cooked Bacon",
+  "item-bacon-drycooked": "Dry Cooked Bacon",
+  "item-bacon-crispy": "Crispy Bacon",
+  "item-bacon-cured": "Cured Bacon",
+  "item-bacon-cookedcured": "Cooked Cured Bacon",
+  "item-bacon-smoked": "Smoked Bacon",
+  "item-bacon-smokedcured": "Smoked Cured Bacon",
+  "item-bacon-infused": "Booze Infused Bacon",
+  "item-bacongreaseportion": "Bacon Grease",
+  "item-infusedbaconwrappedomokpiece": "Booze Infused Bacon Wrapped Gold Omok Piece",
+  "item-headofbacon": "Head of Bacon",
+
+  "itemdesc-bacon-raw": "Fresh pork belly strips. You should probably cook them before you eat them... Unless you need the Gourmand points.<br>",
+  "itemdesc-bacon-cooked": "Tender cooked bacon. Can be cooked further for mouthwatering crispiness.<br>",
+  "itemdesc-bacon-drycooked": "The bacon you love without the heart palpitations.<br>",
+  "itemdesc-bacon-crispy": "Perfectly crispy bacon with a crunch you won't forget for at least 38 minutes.<br>",
+  "itemdesc-bacon-cured": "Salt-preserved bacon with exceptional shelf life.<br>",
+  "itemdesc-bacon-cookedcured": "Cooking it won't exactly lessen the saltiness, but it'll still be delicious.<br>",
+  "itemdesc-bacon-smoked": "Rich, tasty, smoky flavored bacon.<br>",
+  "itemdesc-bacon-smokedcured": "Premium bacon, both cured and smoked for maximum preservation.<br>",
+  "itemdesc-bacon-infused": "Listen, don't judge until you try it...<br>",
+  "itemdesc-bacongreaseportion": "Rich, savory bacon grease extracted from pressed bacon. Pure liquid fat.<br>",
+  "itemdesc-infusedbaconwrappedomokpiece": "Why would anyone think to do this? What could it possibly be used for? Some ancient, long forgotten bacon-based magics?<br>",
+  "itemdesc-headofbacon": "A dense, meaty head of bacon harvested from the legendary bacon plant.<br>",
+
+  "-- HANDBOOK EXTRA SECTIONS --": "-- HANDBOOK EXTRA SECTIONS --",
+
+  "smoking-explanation-title": "Additional Mod Required",
+  "smoking-explanation-text": "You can smoke bacon with either the Smoking Rack from <a href=\"https://mods.vintagestory.at/butchering\">Butchering</a> or the Smoker from <a href=\"https://mods.vintagestory.at/primitivesurvival\">Primitive Survival</a>.",
+  "baconseed-handbook-title": "According to Legend...",
+  "baconseed-handbook-text": "The mythical bacon crop was surprisingly robust, withstanding both extreme heat and extreme cold. It could grow in virtually any climate. Unfortunately, its benefits were evened out by its shortcomings, as the drop took nearly a full year to mature.",
+
+  "-- HANDBOOK GUIDE --": "-- HANDBOOK GUIDE --",
+
+  "baconbaconbacon-guide-title": "Bacon Bacon Bacon",
+  "baconbaconbacon-guide-text": "<strong>Bacon Bacon Bacon</strong><br><i>A comprehensive guide to bacon production and preservation</i><br><br><strong>Obtaining Raw Bacon</strong><br>Raw bacon is harvested from <a href=\"handbooksearch://pig\">pigs</a>. When you harvest an adult pig, you'll find bacon alongside a decreased amount of red meat. Word of warning: eating raw bacon will make you sick. Cook it first... unless want the Gourmand points.<br><br><strong>Cooking Your Bacon</strong><br>Toss your raw bacon into a <a href=\"handbooksearch://firepit\">firepit</a> or <a href=\"handbooksearch://clay oven\">clay oven</a> and let it sizzle. Cooked bacon is tender and delicious, but if you leave it a bit longer, you'll get perfectly crispy bacon with a satisfying crunch.<br><br><strong>Preservation Methods</strong><br>Bacon spoils like any meat, but you've got options:<br>• <i>Curing</i> - Seal raw bacon with <a href=\"handbooksearch://salt\">salt</a> in a <a href=\"handbooksearch://barrel\">barrel</a>. Cured bacon lasts an exceptionally long time and can be cooked for even better nutrition.<br>• <i>Smoking</i> - Requires either the Smoking Rack from <a href=\"https://mods.vintagestory.at/butchering\">Butchering</a> or the Smoker from <a href=\"https://mods.vintagestory.at/primitivesurvival\">Primitive Survival</a>. Gives your bacon a rich, smoky flavor.<br><br><strong>Processing & Pressing</strong><br>Cooked bacon can be pressed to extract <a href=\"handbooksearch://bacon grease\">bacon grease</a>, leaving behind a compressed brick of greasy bacon. Use a <a href=\"handbooksearch://knife\">knife</a> on pressed bacon to get dry cooked bacon - all the flavor without the heart palpitations.<br><br><strong>Booze Infusion</strong><br>For the adventurous: seal dry cooked bacon with a splash of <a href=\"handbooksearch://aqua vitae\">aqua vitae</a> in a barrel. The result is booze infused bacon. It'll get you a little tipsy, but don't knock it till you try it.<br><br><strong>Cooking With Bacon</strong><br>All bacon varieties work in <a href=\"handbooksearch://soup\">soups</a> and <a href=\"handbooksearch://stew\">meat stews</a>. You can even use bacon grease as a soup base. And yes, you can make an entire pie filled with bacon. You're welcome.<br><br><strong>The Legendary Bacon Crop</strong><br><i>They say in ages past, there existed a plant that could grow bacon straight from the soil. The knowledge of its cultivation was lost to time, preserved only in cryptic rituals involving substances best left unspoken. Some claim the secret lies in the union of rendered fat and objects of peculiar significance - tokens wrapped in intoxicated meat, sealed away in vessels of grease. But surely, such tales are merely the ramblings of those who've had too much booze infused bacon...</i>",
+
+  "-- MEAL INGREDIENT NAMES (SOUPS/STEWS) --": "-- MEAL INGREDIENT NAMES (SOUPS/STEWS) --",
+
+  "game:meal-ingredient-soup-primary-bacongreaseportion": "bacon grease",
+  "game:meal-ingredient-soup-stock-bacongreaseportion": "bacon grease",
+  "game:meal-ingredient-soup-secondary-bacongreaseportion": "bacon grease",
+
+  "recipeingredient-item-bacon-raw": "bacon",
+  "recipeingredient-item-bacon-raw-insturmentalcase": "bacon",
+  "game:meal-ingredient-soup-primary-bacon-raw": "bacon",
+  "game:meal-ingredient-soup-secondary-bacon-raw": "bacon",
+  "game:meal-ingredient-stew-primary-bacon-raw": "bacon",
+  "game:meal-ingredient-stew-secondary-bacon-raw": "bacon",
+
+  "recipeingredient-item-bacon-cooked": "double cooked bacon",
+  "recipeingredient-item-bacon-cooked-insturmentalcase": "double cooked bacon",
+  "game:meal-ingredient-soup-primary-bacon-cooked": "double cooked bacon",
+  "game:meal-ingredient-soup-secondary-bacon-cooked": "double cooked bacon",
+  "game:meal-ingredient-stew-primary-bacon-cooked": "double cooked bacon",
+  "game:meal-ingredient-stew-secondary-bacon-cooked": "double cooked bacon",
+
+  "recipeingredient-item-bacon-drycooked": "dry bacon",
+  "recipeingredient-item-bacon-drycooked-insturmentalcase": "dry bacon",
+  "game:meal-ingredient-soup-primary-bacon-drycooked": "dry bacon",
+  "game:meal-ingredient-soup-secondary-bacon-drycooked": "dry bacon",
+  "game:meal-ingredient-stew-primary-bacon-drycooked": "dry bacon",
+  "game:meal-ingredient-stew-secondary-bacon-drycooked": "dry bacon",
+
+  "recipeingredient-item-bacon-crispy": "crispy bacon",
+  "recipeingredient-item-bacon-crispy-insturmentalcase": "crispy bacon",
+  "game:meal-ingredient-soup-primary-bacon-crispy": "crispy bacon",
+  "game:meal-ingredient-soup-secondary-bacon-crispy": "crispy bacon",
+  "game:meal-ingredient-stew-primary-bacon-crispy": "crispy bacon",
+  "game:meal-ingredient-stew-secondary-bacon-crispy": "crispy bacon",
+
+  "recipeingredient-item-bacon-cured": "cured bacon",
+  "recipeingredient-item-bacon-cured-insturmentalcase": "cured bacon",
+  "game:meal-ingredient-soup-primary-bacon-cured": "cured bacon",
+  "game:meal-ingredient-soup-secondary-bacon-cured": "cured bacon",
+  "game:meal-ingredient-stew-primary-bacon-cured": "cured bacon",
+  "game:meal-ingredient-stew-secondary-bacon-cured": "cured bacon",
+
+  "recipeingredient-item-bacon-cookedcured": "double cooked cured bacon",
+  "recipeingredient-item-bacon-cookedcured-insturmentalcase": "double cooked cured bacon",
+  "game:meal-ingredient-soup-primary-bacon-cookedcured": "double cooked cured bacon",
+  "game:meal-ingredient-soup-secondary-bacon-cookedcured": "double cooked cured bacon",
+  "game:meal-ingredient-stew-primary-bacon-cookedcured": "double cooked cured bacon",
+  "game:meal-ingredient-stew-secondary-bacon-cookedcured": "double cooked cured bacon",
+
+  "recipeingredient-item-bacon-smoked": "smoky bacon",
+  "recipeingredient-item-bacon-smoked-insturmentalcase": "smoky bacon",
+  "game:meal-ingredient-soup-primary-bacon-smoked": "smoky bacon",
+  "game:meal-ingredient-soup-secondary-bacon-smoked": "smoky bacon",
+  "game:meal-ingredient-stew-primary-bacon-smoked": "smoky bacon",
+  "game:meal-ingredient-stew-secondary-bacon-smoked": "smoky bacon",
+
+  "recipeingredient-item-bacon-smokedcured": "smoky cured bacon",
+  "recipeingredient-item-bacon-smokedcured-insturmentalcase": "smoky cured bacon",
+  "game:meal-ingredient-soup-primary-bacon-smokedcured": "smoky cured bacon",
+  "game:meal-ingredient-soup-secondary-bacon-smokedcured": "smoky cured bacon",
+  "game:meal-ingredient-stew-primary-bacon-smokedcured": "smoky cured bacon",
+  "game:meal-ingredient-stew-secondary-bacon-smokedcured": "smoky cured bacon",
+
+  "recipeingredient-item-bacon-infused": "boozy bacon",
+  "recipeingredient-item-bacon-infused-insturmentalcase": "boozy bacon",
+  "game:meal-ingredient-soup-primary-bacon-infused": "boozy bacon",
+  "game:meal-ingredient-soup-secondary-bacon-infused": "boozy bacon",
+  "game:meal-ingredient-stew-primary-bacon-infused": "boozy bacon",
+  "game:meal-ingredient-stew-secondary-bacon-infused": "boozy bacon",
+
+  "-- OTHER OVERRIDES --": "-- OTHER OVERRIDES --",
+
+  "pie-single-baconbaconbacon:bacon-raw-raw": "Raw Bacon Pie",
+  "pie-single-baconbaconbacon:bacon-raw-partbaked": "Not-quite-done Bacon Pie",
+  "pie-single-baconbaconbacon:bacon-raw-perfect": "A whole freaking pie filled with cooked bacon",
+  "baconbaconbacon:incontainer-item-bacongreaseportion": "Bacon Grease",
+  "baconbaconbacon:item-pressedbacon-wet": "Brick of Greasy Cooked Bacon",
+  "baconbaconbacon:item-pressedbacon-dry": "Brick of Compressed Dry Bacon",
+  "game:item-seeds-baconcrop": "Bacon Seeds",
+  "game:itemdesc-seeds-baconcrop": "Legend has it, these seeds can grow genuine bacon right out of the ground, but are very hard to come by and grow very slowly...",
+  "game:block-crop-baconcrop-*": "Growing Head of Bacon",
+  "game:block-crop-baconcrop-12": "Mature Head of Bacon",
+
+  "-- PRIMITIVE SURVIVAL INTEGRATION --": "-- PRIMITIVE SURVIVAL INTEGRATION --",
+
+  "primitivesurvival:item-trussedmeat-bacon-raw": "Trussed Bacon (raw)",
+  "primitivesurvival:item-trussedmeat-bacon-smoked": "Trussed Bacon (smoked)",
+  "primitivesurvival:item-trussedmeat-curedbacon-raw": "Trussed Cured Bacon (raw)",
+  "primitivesurvival:item-trussedmeat-curedbacon-smoked": "Trussed Cured Bacon (smoked)",
+
+
+
+
+  "end": "end"
 }

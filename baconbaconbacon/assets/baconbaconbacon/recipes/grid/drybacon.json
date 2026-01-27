@@ -1,0 +1,13 @@
+[
+  {
+    "ingredientPattern": "KB",
+    "ingredients": {
+      "K": { "type": "item", "code": "game:knife-*", "isTool": true  },
+      "B": { "type": "item", "code": "baconbaconbacon:pressedbacon" }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": { "type": "item", "code": "baconbaconbacon:bacon-drycooked", "quantity": 3 }
+  }
+]

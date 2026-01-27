@@ -1,0 +1,9 @@
+{
+  "code": "curedmeat",
+  "sealHours": 240,
+  "ingredients": [
+    { "type": "item", "code": "game:salt", "quantity": 1 },
+    { "type": "item", "code": "baconbaconbacon:bacon-raw", "quantity": 1 }
+  ],
+  "output": { "type": "item", "code": "baconbaconbacon:bacon-cured", "stackSize": 1 }
+}

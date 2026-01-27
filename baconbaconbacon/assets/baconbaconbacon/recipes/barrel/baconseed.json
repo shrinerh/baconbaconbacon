@@ -1,0 +1,9 @@
+{
+  "code": "baconseed",
+  "sealHours": 168,
+  "ingredients": [
+    { "type": "item", "code": "baconbaconbacon:bacongreaseportion", "litres": 50, "consumeLitres": 50 },
+    { "type": "item", "code": "baconbaconbacon:infusedbaconwrappedomokpiece", "quantity": 1 }
+  ],
+  "output": { "type": "item", "code": "game:seeds-baconcrop", "stackSize": 1 }
+}

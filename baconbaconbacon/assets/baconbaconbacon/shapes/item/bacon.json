@@ -1,0 +1,91 @@
+{
+  "editor": {
+    "backDropShape": "",
+    "collapsedPaths": "",
+    "allAngles": false,
+    "entityTextureMode": false,
+    "singleTexture": false,
+    "vsFormatConverted": false
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {
+    "meat": [16, 16]
+  },
+  "textures": {
+    "meat": "item/bacon"
+  },
+  "elements": [
+    {
+      "name": "1",
+      "from": [-2, 0, 5],
+      "to": [2, 1, 8],
+      "rotationOrigin": [-1, 0, 6],
+      "faces": {
+        "north": {"texture": "#meat", "uv": [8, 0, 12, 1], "autoUv": false, "snapUv": false},
+        "east": {"texture": "#meat", "uv": [11, 2, 14, 3], "autoUv": false, "snapUv": false},
+        "south": {"texture": "#meat", "uv": [8, 1, 12, 2], "autoUv": false, "snapUv": false},
+        "west": {"texture": "#meat", "uv": [8, 2, 11, 3], "autoUv": false, "snapUv": false},
+        "up": {"texture": "#meat", "uv": [0, 0, 4, 3], "autoUv": false, "snapUv": false},
+        "down": {"texture": "#meat", "uv": [4, 0, 8, 3], "autoUv": false, "snapUv": false}
+      }
+    },
+    {
+      "name": "2",
+      "from": [-1, 0, 2],
+      "to": [3, 1, 5],
+      "rotationOrigin": [0, 0, 3],
+      "faces": {
+        "north": {"texture": "#meat", "uv": [8, 3, 12, 4], "autoUv": false, "snapUv": false},
+        "east": {"texture": "#meat", "uv": [11, 5, 14, 6], "autoUv": false, "snapUv": false},
+        "south": {"texture": "#meat", "uv": [8, 4, 12, 5], "autoUv": false, "snapUv": false},
+        "west": {"texture": "#meat", "uv": [8, 5, 11, 6], "autoUv": false, "snapUv": false},
+        "up": {"texture": "#meat", "uv": [0, 3, 4, 6], "autoUv": false, "snapUv": false},
+        "down": {"texture": "#meat", "uv": [4, 3, 8, 6], "autoUv": false, "snapUv": false}
+      }
+    },
+    {
+      "name": "3",
+      "from": [-2, 0, -1],
+      "to": [2, 1, 2],
+      "rotationOrigin": [-1, 0, 0],
+      "faces": {
+        "north": {"texture": "#meat", "uv": [8, 6, 12, 7], "autoUv": false, "snapUv": false},
+        "east": {"texture": "#meat", "uv": [11, 8, 14, 9], "autoUv": false, "snapUv": false},
+        "south": {"texture": "#meat", "uv": [8, 7, 12, 8], "autoUv": false, "snapUv": false},
+        "west": {"texture": "#meat", "uv": [8, 8, 11, 9], "autoUv": false, "snapUv": false},
+        "up": {"texture": "#meat", "uv": [0, 6, 4, 9], "autoUv": false, "snapUv": false},
+        "down": {"texture": "#meat", "uv": [4, 6, 8, 9], "autoUv": false, "snapUv": false}
+      }
+    },
+    {
+      "name": "4",
+      "from": [-1, 0, -4],
+      "to": [3, 1, -1],
+      "rotationOrigin": [0, 0, -3],
+      "faces": {
+        "north": {"texture": "#meat", "uv": [8, 9, 12, 10], "autoUv": false, "snapUv": false},
+        "east": {"texture": "#meat", "uv": [11, 11, 14, 12], "autoUv": false, "snapUv": false},
+        "south": {"texture": "#meat", "uv": [8, 10, 12, 11], "autoUv": false, "snapUv": false},
+        "west": {"texture": "#meat", "uv": [8, 11, 11, 12], "autoUv": false, "snapUv": false},
+        "up": {"texture": "#meat", "uv": [0, 9, 4, 12], "autoUv": false, "snapUv": false},
+        "down": {"texture": "#meat", "uv": [4, 9, 8, 12], "autoUv": false, "snapUv": false}
+      }
+    },
+    {
+      "name": "5",
+      "from": [0, 0, -7],
+      "to": [4, 1, -4],
+      "rotationOrigin": [1, 0, -6],
+      "faces": {
+        "north": {"texture": "#meat", "uv": [8, 12, 12, 13], "autoUv": false, "snapUv": false},
+        "east": {"texture": "#meat", "uv": [11, 14, 14, 15], "autoUv": false, "snapUv": false},
+        "south": {"texture": "#meat", "uv": [8, 13, 12, 14], "autoUv": false, "snapUv": false},
+        "west": {"texture": "#meat", "uv": [8, 14, 11, 15], "autoUv": false, "snapUv": false},
+        "up": {"texture": "#meat", "uv": [0, 12, 4, 15], "autoUv": false, "snapUv": false},
+        "down": {"texture": "#meat", "uv": [4, 12, 8, 15], "autoUv": false, "snapUv": false}
+      }
+    }
+  ],
+  "animations": []
+}

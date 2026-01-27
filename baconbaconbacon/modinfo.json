@@ -1,14 +1,10 @@
 {
-    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
-    "type": "Code",
-    "modid": "baconbaconbacon",
-    "name": "baconbaconbacon",
-    "authors": [
-        "Unknown"
-    ],
-    "description": "To be added",
-    "version": "1.0.0",
-    "dependencies": {
-        "game": "1.21.0"
-    }
+  "type": "content",
+  "modid": "baconbaconbacon",
+  "name": "Bacon Bacon Bacon",
+  "authors": [
+    "shrinerh"
+  ],
+  "description": "I searched for \"bacon\" in the Vintage Story Mod DB and to my surprise, there were no results! I finally found my market!",
+  "version": "1.0.0"
 }

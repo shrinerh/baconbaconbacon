@@ -1,0 +1,51 @@
+{
+  "code": "infusedbaconwrappedomokpiece",
+  "enabled": true,
+  "maxStackSize": 8,
+  "creativeInventory": { "general": ["*"], "items": ["*"] },
+  "materialDensity": 800,
+  "attributes": {
+    "inContainerTexture": {
+      "base": "baconbaconbacon:block/wood/barrel/infused-bacon"
+    },
+    "juiceableProperties": {
+      "liquidStack": { "type": "item", "code": "baconbaconbacon:bacongreaseportion", "stacksize": 1 },
+      "pressedStack": { "type": "item", "code": "baconbaconbacon:pressedbacon", "stacksize": 1 }
+    }
+  },
+  "inTrapTransform": {
+    "translation": { "x": -0.03, "y": -0.09, "z": 0 },
+    "scale": 0.7
+  },
+  "transitionableProps": [{
+    "type": "Perish",
+    "freshHours": { "avg": 8766 },
+    "transitionHours": { "avg": 48 },
+    "transitionedStack": { "type": "item", "code": "game:rot" },
+    "transitionRatio": 1
+  }],
+  "textures": {
+    "material": { "base": "baconbaconbacon:item/infusedbaconwrappedomokpiece" }
+  },
+  "shape": {
+    "base": "baconbaconbacon:item/infusedbaconwrappedomokpiece"
+  },
+  "guiTransform": {
+    "translation": { "x": 2.1, "y": 14.4, "z": 0 },
+    "rotation": { "x": -16, "y": 18, "z": -180 },
+    "origin": { "x": 0, "y": 0, "z": 0 },
+    "scale": 2.94
+  },
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0.1, "z": 0 },
+    "rotation": { "x": 92, "y": 0, "z": 0 },
+    "origin": { "x": 0, "y": 0, "z": 0 },
+    "scale": 2.5
+  },
+  "tpHandTransform": {
+    "translation": { "x": -0.4, "y": -0.2, "z": 0.2 },
+    "rotation": { "x": -68, "y": -28, "z": -66 },
+    "origin": { "x": 0, "y": 0, "z": 0 },
+    "scale": 0.26
+  }
+}
