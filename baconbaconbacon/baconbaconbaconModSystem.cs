@@ -17,12 +17,12 @@ namespace baconbaconbacon
 
         public override void StartServerSide(ICoreServerAPI api)
         {
-            Mod.Logger.Notification("Bacon Bacon Bacon got itself up and running on the server. You're lucky it decided to get up off the couch...");
+            Mod.Logger.Notification("BBB: Up and running serverside");
         }
 
         public override void StartClientSide(ICoreClientAPI api)
         {
-            Mod.Logger.Notification("Bacon Bacon Bacon got itself up and running on your client. You're lucky it decided to get up off the couch...");
+            Mod.Logger.Notification("BBB: Up and running clientside");
         }
 
         public override void AssetsFinalize(ICoreAPI api)
@@ -58,6 +58,7 @@ namespace baconbaconbacon
             var d20 = config.SetThisToTheIntegerNumberOneThousandTwoHundredAndTwentyFiveToTurnOffBaconCrops == 1225;
             if (d1 && d2 && d3 && d4 && d5 && d6 && d7 && d8 && d9 && d10 && d11 && d12 && d13 && d14 && d15 && d16 && d17 && d18 && d19 && d20)
             {
+                Mod.Logger.Notification("BBB: Turning off bacon crops because apparently you don't like fun and whimsey");
                 var items = api.World.Items.Where(i => i.Code?.Path != null
                     && (i.Code.Path.ToLower().Contains("baconcrop")
                     || i.Code.Path.ToLower().Contains("headofbacon")
