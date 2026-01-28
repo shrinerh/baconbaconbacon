@@ -1,0 +1,42 @@
+[
+  {
+    "file": "baconbaconbacon:itemtypes/headofbacon",
+    "op": "replace",
+    "path": "/enabled",
+    "value": false,
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": false
+    }
+  },
+  {
+    "file": "baconbaconbacon:itemtypes/infusedbaconwrappedomokpiece",
+    "op": "replace",
+    "path": "/enabled",
+    "value": false,
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": false
+    }
+  },
+  {
+    "file": "baconbaconbacon:recipes/grid/headofbacon",
+    "op": "add",
+    "path": "/0/enabled",
+    "value": false,
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": false
+    }
+  },
+  {
+    "file": "baconbaconbacon:recipes/grid/infusedbaconwrappedomokpiece",
+    "op": "add",
+    "path": "/0/enabled",
+    "value": false,
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": false
+    }
+  }
+]

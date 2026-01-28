@@ -8,34 +8,23 @@ namespace baconbaconbacon
 {
     public class baconbaconbaconModSystem : ModSystem
     {
-        private BaconConfig config;
-
         public override void Start(ICoreAPI api)
         {
             Mod.Logger.Notification("Bacon Bacon Bacon: " + api.Side + " started");
         }
 
-        public override void StartServerSide(ICoreServerAPI api)
-        {
-            Mod.Logger.Notification("BBB: Up and running serverside");
-        }
-
-        public override void StartClientSide(ICoreClientAPI api)
-        {
-            Mod.Logger.Notification("BBB: Up and running clientside");
-        }
-
-        public override void AssetsFinalize(ICoreAPI api)
+        public override void StartPre(ICoreAPI api)
         {
             // Set up Config
-            config = api.LoadModConfig<BaconConfig>("BaconBaconBaconConfig.json");
+            var config = api.LoadModConfig<BaconConfig>("BaconBaconBaconConfig.json");
             if (config == null)
             {
                 config = new BaconConfig();
             }
             api.StoreModConfig(config, "BaconBaconBaconConfig.json");
 
-            // Disable Bacon Crop Stuff
+            // Bacon Crop Stuff - Only disable if ALL of the sarcastic settings have been changed
+            var enableBaconCrops = true;
             var d1  = config.TurnOnBaconCrops != true;
             var d2  = config.TurnOffBaconCrops != false;
             var d3  = config.DefinitelyTurnOffBaconCrops != false;
@@ -58,25 +47,9 @@ namespace baconbaconbacon
             var d20 = config.SetThisToTheIntegerNumberOneThousandTwoHundredAndTwentyFiveToTurnOffBaconCrops == 1225;
             if (d1 && d2 && d3 && d4 && d5 && d6 && d7 && d8 && d9 && d10 && d11 && d12 && d13 && d14 && d15 && d16 && d17 && d18 && d19 && d20)
             {
-                Mod.Logger.Notification("BBB: Turning off bacon crops because apparently you don't like fun and whimsey");
-                var items = api.World.Items.Where(i => i.Code?.Path != null
-                    && (i.Code.Path.ToLower().Contains("baconcrop")
-                    || i.Code.Path.ToLower().Contains("headofbacon")
-                    || i.Code.Path.ToLower().Contains("infusedbaconwrappedomokpiece")))
-                    .ToList();
-                foreach (var i in items)
-                    api.World.Items.Remove(i);
-
-                var recipes = api.World.GridRecipes.Where(r => (r.Output.Code?.Path != null && r.Output.Code.Path.ToLower().Contains("infusedbaconwrappedomokpiece"))
-                    || (r.Ingredients != null && r.Ingredients.Any(i => i.Value.Code.Path.Contains("headofbacon"))))
-                    .ToList();
-                foreach (var r in recipes)
-                    api.World.GridRecipes.Remove(r);
-
-                var blocks = api.World.Blocks.Where(b => b.Code?.Path != null && b.Code.Path.ToLower().Contains("baconcrop"));
-                foreach (var b in blocks)
-                    b.CreativeInventoryTabs = null;
+                enableBaconCrops = false;
             }
+            api.World.Config.SetBool("BaconBaconBacon_EnableBaconCrops", enableBaconCrops);
         }
 
     }

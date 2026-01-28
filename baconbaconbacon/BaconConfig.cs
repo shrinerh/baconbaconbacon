@@ -2,7 +2,7 @@
 {
     public class BaconConfig
     {
-        // Disable Bacon Crop Stuff
+        // Bacon Crop Stuff
         public bool TurnOnBaconCrops { get; set; } = true;
         public bool TurnOffBaconCrops { get; set; } = false;
         public bool DefinitelyTurnOffBaconCrops { get; set; } = false;

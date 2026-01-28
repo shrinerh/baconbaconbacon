@@ -3,7 +3,11 @@
     "file": "game:blocktypes/plant/crop/cabbage",
     "op": "add",
     "path": "/variantgroups/0/states/-",
-    "value": "baconcrop"
+    "value": "baconcrop",
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": true
+    }
   },
   {
     "file": "game:blocktypes/plant/crop/cabbage",
@@ -11,6 +15,10 @@
     "path": "/shapeByType",
     "value": {
       "crop-baconcrop-*": { "base": "baconbaconbacon:block/plant/crop/baconcrop/stage{stage}" }
+    },
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": true
     }
   },
   {
@@ -94,6 +102,10 @@
         { "type": "item", "code": "game:seeds-baconcrop", "quantity": { "avg": 1.25 } },
         { "type": "item", "code": "baconbaconbacon:headofbacon", "quantity": { "avg": 1, "var": 0 } }
       ]
+    },
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": true
     }
   },
   {
@@ -109,13 +121,21 @@
         "heatDamageAbove": 100,
         "coldDamageBelow": -100
       }
+    },
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": true
     }
   },
   {
     "file": "game:itemtypes/resource/seeds",
     "op": "add",
     "path": "/variantgroups/0/states/-",
-    "value": "baconcrop"
+    "value": "baconcrop",
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": true
+    }
   },
   {
     "file": "game:itemtypes/resource/seeds",
@@ -125,6 +145,10 @@
       "seeds-baconcrop": {
         "seed": { "base": "baconbaconbacon:item/resource/seeds/baconseed" }
       }
+    },
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": true
     }
   },
   {
@@ -142,6 +166,10 @@
           ]
         }
       }
+    },
+    "condition": {
+      "when": "BaconBaconBacon_EnableBaconCrops",
+      "isValue": true
     }
   }
 ]
