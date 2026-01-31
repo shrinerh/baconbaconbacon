@@ -1,0 +1,134 @@
+[
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-raw" },
+      "M": { "type": "item", "code": "game:redmeat-raw" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-redmeat-raw", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-raw" },
+      "M": { "type": "item", "code": "game:bushmeat-raw" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-bushmeat-raw", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-raw" },
+      "M": { "type": "item", "code": "game:poultry-raw" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-poultry-raw", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-cured" },
+      "M": { "type": "item", "code": "game:redmeat-cured" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-redmeat-cured", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-cured" },
+      "M": { "type": "item", "code": "game:bushmeat-cured" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-bushmeat-cured", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-cured" },
+      "M": { "type": "item", "code": "game:poultry-cured" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-poultry-cured", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-cured" },
+      "M": { "type": "item", "code": "game:redmeat-raw" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-redmeat-cured", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-cured" },
+      "M": { "type": "item", "code": "game:bushmeat-raw" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-bushmeat-cured", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-cured" },
+      "M": { "type": "item", "code": "game:poultry-raw" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-poultry-cured", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-raw" },
+      "M": { "type": "item", "code": "game:redmeat-cured" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-redmeat-cured", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-raw" },
+      "M": { "type": "item", "code": "game:bushmeat-cured" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-bushmeat-cured", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "BMB",
+    "ingredients": {
+      "B": { "type": "item", "code": "baconbaconbacon:bacon-raw" },
+      "M": { "type": "item", "code": "game:poultry-cured" }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-poultry-cured", "quantity": 1 }
+  }
+]

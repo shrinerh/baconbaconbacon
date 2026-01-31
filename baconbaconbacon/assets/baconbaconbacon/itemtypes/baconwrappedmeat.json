@@ -1,0 +1,412 @@
+{
+  "code": "baconwrappedmeat",
+  "enabled": true,
+  "maxStackSize": 64,
+  "creativeInventory": { "general": ["*"], "items": ["*"] },
+  "materialDensity": 600,
+  "variantGroups": [
+    {
+      "code": "meat",
+      "states": ["redmeat", "bushmeat", "poultry"]
+    },
+    {
+      "code": "state",
+      "states": ["raw", "cooked", "cured", "cookedcured"]
+    }
+  ],
+  "attributes": {
+    "handbook": {
+      "groupBy": ["baconwrappedmeat-*"]
+    },
+    "foodTags": ["meat"],
+    "inContainerTextureByType": {
+      "*-raw": { "base": "baconbaconbacon:block/wood/barrel/raw-bacon" },
+      "*-cooked": { "base": "baconbaconbacon:block/wood/barrel/cooked-bacon" },
+      "*-cured": { "base": "baconbaconbacon:block/wood/barrel/cured-bacon" },
+      "*-cookedcured": { "base": "baconbaconbacon:block/wood/barrel/cookedcured-bacon" }
+    },
+    "crockable": true,
+    "shelvable": true,
+    "displayCaseable": true,
+    "inFirePitProps": {
+      "transform": {
+        "scale": 0.9,
+        "origin": { "x": 0.5, "y": 0.0625, "z": 0.5 },
+        "translation": { "x": 0.03125, "y": 0.3125, "z": 0 },
+        "rotation": { "x": 0, "y": 53, "z": 90 }
+      },
+      "useFirepitModel": "Spit"
+    },
+    "nutritionPropsWhenInMealByType": {
+      "*-redmeat-raw": {
+        "foodCategory": "Protein",
+        "satiety": 820
+      },
+      "*-redmeat-cooked": {
+        "foodCategory": "Protein",
+        "satiety": 820
+      },
+      "*-bushmeat-raw": {
+        "foodCategory": "Protein",
+        "satiety": 580
+      },
+      "*-bushmeat-cooked": {
+        "foodCategory": "Protein",
+        "satiety": 580
+      },
+      "*-poultry-raw": {
+        "foodCategory": "Protein",
+        "satiety": 775
+      },
+      "*-poultry-cooked": {
+        "foodCategory": "Protein",
+        "satiety": 775
+      },
+      "*-redmeat-cured": {
+        "foodCategory": "Protein",
+        "satiety": 750
+      },
+      "*-redmeat-cookedcured": {
+        "foodCategory": "Protein",
+        "satiety": 750
+      },
+      "*-bushmeat-cured": {
+        "foodCategory": "Protein",
+        "satiety": 540
+      },
+      "*-bushmeat-cookedcured": {
+        "foodCategory": "Protein",
+        "satiety": 540
+      },
+      "*-poultry-cured": {
+        "foodCategory": "Protein",
+        "satiety": 700
+      },
+      "*-poultry-cookedcured": {
+        "foodCategory": "Protein",
+        "satiety": 700
+      }
+    }
+  },
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 }
+      }
+    }
+  ],
+  "combustiblePropsByType": {
+    "*-redmeat-raw": {
+      "meltingPoint": 160,
+      "meltingDuration": 30,
+      "smeltedRatio": 1,
+      "smeltingType": "cook",
+      "smeltedStack": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-redmeat-cooked" },
+      "requiresContainer": false
+    },
+    "*-bushmeat-raw": {
+      "meltingPoint": 160,
+      "meltingDuration": 30,
+      "smeltedRatio": 1,
+      "smeltingType": "cook",
+      "smeltedStack": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-bushmeat-cooked" },
+      "requiresContainer": false
+    },
+    "*-poultry-raw": {
+      "meltingPoint": 160,
+      "meltingDuration": 30,
+      "smeltedRatio": 1,
+      "smeltingType": "cook",
+      "smeltedStack": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-poultry-cooked" },
+      "requiresContainer": false
+    },
+    "*-redmeat-cured": {
+      "meltingPoint": 160,
+      "meltingDuration": 30,
+      "smeltedRatio": 1,
+      "smeltingType": "cook",
+      "smeltedStack": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-redmeat-cookedcured" },
+      "requiresContainer": false
+    },
+    "*-bushmeat-cured": {
+      "meltingPoint": 160,
+      "meltingDuration": 30,
+      "smeltedRatio": 1,
+      "smeltingType": "cook",
+      "smeltedStack": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-bushmeat-cookedcured" },
+      "requiresContainer": false
+    },
+    "*-poultry-cured": {
+      "meltingPoint": 160,
+      "meltingDuration": 30,
+      "smeltedRatio": 1,
+      "smeltingType": "cook",
+      "smeltedStack": { "type": "item", "code": "baconbaconbacon:baconwrappedmeat-poultry-cookedcured" },
+      "requiresContainer": false
+    }
+  },
+  "nutritionPropsByType": {
+    "*-redmeat-raw": {
+      "foodCategory": "Protein",
+      "health": -2
+    },
+    "*-redmeat-cooked": {
+      "foodCategory": "Protein",
+      "satiety": 680
+    },
+    "*-bushmeat-raw": {
+      "foodCategory": "Protein",
+      "health": -2
+    },
+    "*-bushmeat-cooked": {
+      "foodCategory": "Protein",
+      "satiety": 520
+    },
+    "*-poultry-raw": {
+      "foodCategory": "Protein",
+      "health": -2
+    },
+    "*-poultry-cooked": {
+      "foodCategory": "Protein",
+      "satiety": 600
+    },
+    "*-redmeat-cured": {
+      "foodCategory": "Protein",
+      "satiety": 500
+    },
+    "*-redmeat-cookedcured": {
+      "foodCategory": "Protein",
+      "satiety": 600
+    },
+    "*-bushmeat-cured": {
+      "foodCategory": "Protein",
+      "satiety": 390
+    },
+    "*-bushmeat-cookedcured": {
+      "foodCategory": "Protein",
+      "satiety": 440
+    },
+    "*-poultry-cured": {
+      "foodCategory": "Protein",
+      "satiety": 450
+    },
+    "*-poultry-cookedcured": {
+      "foodCategory": "Protein",
+      "satiety": 500
+    }
+  },
+  "transitionablePropsByType": {
+    "*-redmeat-raw": [{
+      "type": "Perish",
+      "freshHours": { "avg": 24 },
+      "transitionHours": { "avg": 12 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-redmeat-cooked": [{
+      "type": "Perish",
+      "freshHours": { "avg": 96 },
+      "transitionHours": { "avg": 36 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-bushmeat-raw": [{
+      "type": "Perish",
+      "freshHours": { "avg": 24 },
+      "transitionHours": { "avg": 12 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-bushmeat-cooked": [{
+      "type": "Perish",
+      "freshHours": { "avg": 96 },
+      "transitionHours": { "avg": 36 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-poultry-raw": [{
+      "type": "Perish",
+      "freshHours": { "avg": 24 },
+      "transitionHours": { "avg": 12 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-poultry-cooked": [{
+      "type": "Perish",
+      "freshHours": { "avg": 96 },
+      "transitionHours": { "avg": 36 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-redmeat-cured": [{
+      "type": "Perish",
+      "freshHours": { "avg": 7200 },
+      "transitionHours": { "avg": 3600 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-redmeat-cookedcured": [{
+      "type": "Perish",
+      "freshHours": { "avg": 200 },
+      "transitionHours": { "avg": 36 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-bushmeat-cured": [{
+      "type": "Perish",
+      "freshHours": { "avg": 7200 },
+      "transitionHours": { "avg": 3600 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-bushmeat-cookedcured": [{
+      "type": "Perish",
+      "freshHours": { "avg": 200 },
+      "transitionHours": { "avg": 36 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-poultry-cured": [{
+      "type": "Perish",
+      "freshHours": { "avg": 7200 },
+      "transitionHours": { "avg": 3600 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }],
+    "*-poultry-cookedcured": [{
+      "type": "Perish",
+      "freshHours": { "avg": 200 },
+      "transitionHours": { "avg": 36 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }]
+  },
+  "texturesByType": {
+    "*-redmeat-raw": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/rawbaconwrappedmeat" }
+    },
+    "*-redmeat-cooked": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/cookedbaconwrappedmeat" }
+    },
+    "*-bushmeat-raw": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/rawbaconwrappedmeat" }
+    },
+    "*-bushmeat-cooked": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/cookedbaconwrappedmeat" }
+    },
+    "*-poultry-raw": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/rawbaconwrappedmeat" }
+    },
+    "*-poultry-cooked": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/cookedbaconwrappedmeat" }
+    },
+    "*-redmeat-cured": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/curedbaconwrappedmeat" }
+    },
+    "*-redmeat-cookedcured": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/cookedcuredbaconwrappedmeat" }
+    },
+    "*-bushmeat-cured": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/curedbaconwrappedmeat" }
+    },
+    "*-bushmeat-cookedcured": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/cookedcuredbaconwrappedmeat" }
+    },
+    "*-poultry-cured": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/curedbaconwrappedmeat" }
+    },
+    "*-poultry-cookedcured": {
+      "meat": { "base": "baconbaconbacon:item/food/meat/cookedcuredbaconwrappedmeat" }
+    }
+  },
+  "shapeByType": {
+    "*-redmeat-*": { "base": "baconbaconbacon:item/food/meat/red" },
+    "*-bushmeat-*": { "base": "baconbaconbacon:item/food/meat/bushmeat" },
+    "*-poultry-*": { "base": "baconbaconbacon:item/food/meat/poultry" }
+  },
+  "guiTransformByType": {
+    "*-redmeat-*": {
+      "rotate": false,
+      "translation": { "x": 0.5, "y": 0, "z": 0 },
+      "rotation": { "x": 171, "y": -122, "z": 33 },
+      "origin": { "x": 0.4, "y": 0.08, "z": 0.5 },
+      "scale": 4.72
+    },
+    "*-bushmeat-*": {
+      "rotate": false,
+      "translation": { "x": 0, "y": 0, "z": 0 },
+      "rotation": { "x": 171, "y": -122, "z": 33 },
+      "origin": { "x": 0.5, "y": 0.04, "z": 0.53 },
+      "scale": 4.7199
+    },
+    "*-poultry-*": {
+      "rotate": false,
+      "translation": { "x": 0, "y": 0, "z": 0 },
+      "rotation": { "x": 171, "y": -122, "z": 33 },
+      "origin": { "x": 0.5, "y": 0.04, "z": 0.53 },
+      "scale": 4.7199
+    }
+  },
+  "groundTransformByType": {
+    "*-redmeat-*": {
+      "translation": { "x": 0, "y": 0, "z": 0 },
+      "rotation": { "x": 180, "y": 33, "z": -180 },
+      "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+      "scale": 5
+    },
+    "*-bushmeat-*": {
+      "translation": { "x": 0, "y": 0, "z": 0 },
+      "rotation": { "x": 180, "y": 33, "z": -180 },
+      "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+      "scale": 5
+    },
+    "*-poultry-*": {
+      "translation": { "x": 0, "y": 0, "z": 0 },
+      "rotation": { "x": 180, "y": 33, "z": -180 },
+      "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+      "scale": 5
+    }
+  },
+  "tpHandTransformByType": {
+    "*-redmeat-*": {
+      "translation": { "x": -0.1, "y": 0.26, "z": -0.04 },
+      "rotation": { "x": -78, "y": 15, "z": 0 },
+      "origin": { "x": 0.23, "y": 0, "z": 0.13 },
+      "scale": 0.92
+    },
+    "*-bushmeat-*": {
+      "translation": { "x": -0.04, "y": 0.26, "z": -0.04 },
+      "rotation": { "x": -78, "y": 15, "z": 0 },
+      "origin": { "x": 0.23, "y": 0, "z": 0.13 },
+      "scale": 0.92
+    },
+    "*-poultry-*": {
+      "translation": { "x": -0.07, "y": -0.36, "z": -0.14 },
+      "rotation": { "x": 85, "y": 9, "z": 3 },
+      "origin": { "x": 0.23, "y": 0, "z": 0.13 },
+      "scale": 0.75
+    }
+  },
+  "fpHandTransformByType": {
+    "*-redmeat-*": {
+      "translation": { "x": -0.06, "y": 0.36, "z": 0.23 },
+      "rotation": { "x": 40, "y": 91, "z": 15 },
+      "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+      "scale": 2.5
+    },
+    "*-bushmeat-*": {
+      "translation": { "x": -0.06, "y": 0.36, "z": 0.23 },
+      "rotation": { "x": 40, "y": 91, "z": 15 },
+      "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+      "scale": 2.5
+    },
+    "*-poultry-*": {
+      "translation": { "x": -0.06, "y": 0.36, "z": 0.23 },
+      "rotation": { "x": 86, "y": -83, "z": 24 },
+      "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+      "scale": 2.5
+    }
+  }
+}
