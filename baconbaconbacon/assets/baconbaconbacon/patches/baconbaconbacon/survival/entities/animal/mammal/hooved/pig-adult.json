@@ -2,8 +2,11 @@
   {
     "file": "game:entities/animal/mammal/hooved/pig-adult",
     "op": "replace",
-    "path": "/server/behaviors/6/drops/0/quantity",
-    "value": { "avg": 5, "var": 1.5 }
+    "path": "/server/behaviors/6/drops/0/quantityByType",
+    "value": {
+      "pig-eurasian-elder-*": { "avg": 10, "var": 3 },
+      "*": { "avg": 5, "var": 1.5 }
+    }
   },
   {
     "file": "game:entities/animal/mammal/hooved/pig-adult",
@@ -12,7 +15,10 @@
     "value": {
       "type": "item",
       "code": "baconbaconbacon:bacon-raw",
-      "quantity": { "avg": 10, "var": 2 }
+      "quantityByType": {
+        "pig-eurasian-elder-*": { "avg": 18, "var": 4 },
+        "*": { "avg": 10, "var": 2 }
+      }
     }
   }
 ]
