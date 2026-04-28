@@ -1,0 +1,83 @@
+{
+  "code": "baconpoultice",
+  "enabled": true,
+  "maxStackSize": 16,
+  "creativeInventory": { "general": ["*"], "items": ["*"] },
+  "materialDensity": 600,
+  "variantGroups": [
+    {
+      "code": "type",
+      "states": [ "raw", "cured" ]
+    }
+  ],
+  "behaviors": [
+    {
+      "name": "HealingItem",
+      "propertiesByType": {
+        "*-raw": {
+          "health": 2,
+          "applicationtimesec": 3,
+          "maxapplicationtimesec": 10,
+          "effectdurationsec": 10,
+          "ticks": 10,
+          "cancelinair": false,
+          "cancelwhileswimming": false,
+          "delaytocancelsec": 0.5
+        },
+        "*-cured": {
+          "health": 4,
+          "applicationtimesec": 3,
+          "maxapplicationtimesec": 10,
+          "effectdurationsec": 10,
+          "ticks": 10,
+          "cancelinair": false,
+          "cancelwhileswimming": false,
+          "delaytocancelsec": 0.5
+        }
+      }
+    }
+  ],
+  "transitionablePropsByType": {
+    "*-raw": [
+      {
+        "type": "Perish",
+        "freshHours": { "avg": 24 },
+        "transitionHours": { "avg": 12 },
+        "transitionedStack": { "type": "item", "code": "game:rot" },
+        "transitionRatio": 1
+      }
+    ],
+    "*-cured": [
+      {
+        "type": "Perish",
+        "freshHours": { "avg": 5000 },
+        "transitionHours": { "avg": 1200 },
+        "transitionedStack": { "type": "item", "code": "game:rot" },
+        "transitionRatio": 1
+      }
+    ]
+  },
+  "texturesByType": {
+    "*-raw": { "meatbandaid": { "base": "baconbaconbacon:item/raw-baconpoultice" } },
+    "*-cured": { "meatbandaid": { "base": "baconbaconbacon:item/cured-baconpoultice" } }
+  },
+  "shape": { "base": "item/baconpoultice" },
+  "guiTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": -62, "y": -39, "z": 170 },
+    "origin": { "x": 0.6, "y": 0, "z": 0.5 },
+    "scale": 2.21
+  },
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "origin": { "x": 0, "y": 0, "z": 0 },
+    "scale": 3.4
+  },
+  "tpHandTransform": {
+    "translation": { "x": 0, "y": 0.5, "z": 0 },
+    "rotation": { "x": 90, "y": 100, "z": 0 },
+    "origin": { "x": 0, "y": 0, "z": 0 },
+    "scale": 0.5
+  }
+}

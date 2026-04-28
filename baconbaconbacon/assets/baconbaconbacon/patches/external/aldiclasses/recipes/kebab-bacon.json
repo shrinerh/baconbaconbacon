@@ -1,0 +1,57 @@
+[
+  {
+    "file": "aldiclasses:recipes/grid/culinary.json",
+    "op": "add",
+    "path": "/-",
+    "value": {
+      "ingredientPattern": "__M,KV_,S__",
+      "requiresTrait": "culinary",
+      "ingredients": {
+        "K": {
+          "type": "item",
+          "tags": [ "tool-knife" ],
+          "isTool": true
+        },
+        "S": {
+          "type": "item",
+          "code": "game:stick"
+        },
+        "M": {
+          "type": "item",
+          "code": "baconbaconbacon:bacon-raw"
+        },
+        "V": {
+          "type": "item",
+          "code": "game:*",
+          "name": "ingredient",
+          "allowedvariants": [
+            "vegetable-carrot",
+            "vegetable-onion",
+            "vegetable-cabbage",
+            "vegetable-turnip",
+            "vegetable-parsnip",
+            "vegetable-olive",
+            "vegetable-pumpkin",
+            "vegetable-cassava",
+            "cattailroot",
+            "papyrusroot",
+            "pickledvegetable-carrot",
+            "pickledvegetable-onion",
+            "pickledvegetable-cabbage",
+            "pickledvegetable-turnip",
+            "pickledvegetable-parsnip",
+            "pickledvegetable-olive"
+          ]
+        }
+      },
+      "width": 3,
+      "height": 3,
+      "output": {
+        "type": "item",
+        "code": "aldiclasses:kebab-raw",
+        "quantity": 1
+      }
+    },
+    "dependsOn": [{ "modid": "aldiclasses" }]
+  }
+]
