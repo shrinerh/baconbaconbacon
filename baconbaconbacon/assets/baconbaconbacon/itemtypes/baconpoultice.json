@@ -7,7 +7,7 @@
   "variantGroups": [
     {
       "code": "type",
-      "states": [ "raw", "cured" ]
+      "states": [ "raw", "cured", "infused" ]
     }
   ],
   "behaviors": [
@@ -29,6 +29,16 @@
           "applicationtimesec": 3,
           "maxapplicationtimesec": 10,
           "effectdurationsec": 10,
+          "ticks": 10,
+          "cancelinair": false,
+          "cancelwhileswimming": false,
+          "delaytocancelsec": 0.5
+        },
+        "*-infused": {
+          "health": 14,
+          "applicationtimesec": 4,
+          "maxapplicationtimesec": 15,
+          "effectdurationsec": 5,
           "ticks": 10,
           "cancelinair": false,
           "cancelwhileswimming": false,
@@ -55,11 +65,26 @@
         "transitionedStack": { "type": "item", "code": "game:rot" },
         "transitionRatio": 1
       }
+    ],
+    "*-infused": [
+      {
+        "type": "Perish",
+        "freshHours": { "avg": 876000 },
+        "transitionHours": { "avg": 600 },
+        "transitionedStack": { "type": "item", "code": "game:rot" },
+        "transitionRatio": 1
+      }
     ]
+  },
+  "attributes": {
+    "handbook": {
+      "groupBy": ["baconpoultice-*"]
+    }
   },
   "texturesByType": {
     "*-raw": { "meatbandaid": { "base": "baconbaconbacon:item/raw-baconpoultice" } },
-    "*-cured": { "meatbandaid": { "base": "baconbaconbacon:item/cured-baconpoultice" } }
+    "*-cured": { "meatbandaid": { "base": "baconbaconbacon:item/cured-baconpoultice" } },
+    "*-infused": { "meatbandaid": { "base": "baconbaconbacon:item/infused-baconpoultice" } }
   },
   "shape": { "base": "item/baconpoultice" },
   "guiTransform": {
